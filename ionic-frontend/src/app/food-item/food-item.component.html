@@ -1,0 +1,19 @@
+<div *ngFor="let item of todaysMenu | async" class="food-item">
+
+  <div class="food-item-text">
+    <ion-text *ngIf="item.is_veg">
+      <ion-icon color="success" name="triangle"></ion-icon>
+    </ion-text>
+    <ion-text *ngIf="!item.is_veg">
+      <ion-icon color="danger" name="stop"></ion-icon>
+    </ion-text>
+    <h6><b>{{ item.name }}</b></h6>
+    <ion-text color="medium">Serves 1</ion-text><br>
+    <p>₹{{ item.price }}</p>
+  </div>
+
+  <img src="../../assets/chilli-chicken-recipe.jpg">
+
+</div>
+
+<div *ngIf="todaysMenu ">No Items Found.</div>

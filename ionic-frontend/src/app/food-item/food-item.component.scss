@@ -1,0 +1,18 @@
+.food-item {
+    padding: 1rem 0.7rem 1rem;
+    display: flex;
+    // background-color: burlywood;
+}
+
+.food-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    flex-grow: 1;
+} 
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 0.5rem;
+}
